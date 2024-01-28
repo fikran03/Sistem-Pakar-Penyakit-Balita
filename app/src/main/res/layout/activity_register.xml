@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".activities.RegisterActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="142dp"
+            android:text="REGISTER"
+            android:textSize="30dp"
+            android:textStyle="bold">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextRegisterUsername"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Username"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextRegisterAnak"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/editTextRegisterUsername"
+            android:hint="Nama Anak"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextRegisterEmail"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/editTextRegisterAnak"
+            android:hint="Email"
+            android:gravity="center_horizontal"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextRegisterPassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="42dp"
+            android:layout_below="@id/editTextRegisterEmail"
+            android:hint="Password"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/primary"
+            android:text="  REGISTER"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp"
+            app:elevation="5dp" />
+
+        <TextView
+            android:id="@+id/TextLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="510dp"
+            android:text="Login"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="290dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="560dp"
+            android:background="@drawable/balita">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
